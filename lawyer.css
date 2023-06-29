@@ -1,0 +1,182 @@
+/* mobile version first */
+
+html,body{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body, .navbar{
+    margin: 0;
+    padding: 0;
+}
+/* navbar styling */
+.logo{
+    height: 6rem;
+    margin-top: 1rem;
+}
+.navbar-nav,.herosection-heading,.hero-button,.carousel-details,.comingsoon-content1,.contact{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: white;
+}
+.navbar-nav{
+    font-weight: bold;
+    text-align: center;
+}
+/* herosection styling */
+.herosection{
+    height: 70vh;
+    width: auto;
+    background: linear-gradient(#ffffff00,black), url("images/justice.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.herosection-heading{
+    letter-spacing: 1px;
+    line-height: 1.25;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #ffff;
+    padding-top: 25vh;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.herotext-highlight{
+    font-family: 'Noto Serif Display', serif;
+}
+.hero-button{
+    line-height: 5;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #3498DB;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+.hero-button:hover{
+    padding: 0.75rem 1.25rem;
+    color: white;
+    background-color: #217bb8;
+}
+/* carousel section */
+/* message section */
+.message{
+    background-image: linear-gradient(#ffffff00,#3498DB);
+    height: 80vh;
+    text-align: center;
+    vertical-align: middle;
+}
+.message figure{
+    vertical-align: middle;
+}
+.message-pic{
+    width: 7.5rem;
+}
+.message-pic1{
+    width: 10rem;
+}
+.carousel-fontchange,.carousel-message{
+    font-family: 'Noto Serif Display', serif;
+}
+.carousel-message{
+    font-size: 1.25rem;
+    padding-top: 20vh;  
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.carousel-details{
+    padding-top: 1rem;
+}
+.verified{
+    margin-bottom: 0.2rem;
+    color: #0d6efd;
+    width: 1rem;
+}
+/* contact styling */
+.contact{
+    text-align: center;
+}
+.contact-heading{
+    font-weight: bold;
+}
+.contact-links{
+    padding: 0.5rem 0;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+.contact-accounts,.social-accounts{
+    text-decoration: none;
+    color: black;
+}
+.social-accounts{
+    color: #5F6A6A;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.copyright-claim{
+    font-size: 0.90rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+/* tablet responsive */
+@media only screen and (min-width: 768px){
+    .nav-item{
+        font-size: 1.25rem;
+    }
+.herosection-heading{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 3rem;
+}
+.hero-button{
+    font-size: 1.30rem;
+}
+.carousel-message{
+    font-size: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 2rem;
+}
+.message-pic{
+    width: 8.5rem;
+}
+.message-pic1{
+    width: 15rem;
+}
+.carousel-details{
+    font-size: 1.5rem;
+}
+.verified{
+    width: 1.60rem;
+}
+}
+/* laptop responsive */
+@media only screen and (min-width: 1280px){
+    .nav-item{
+        padding-right: 1.25rem;
+    }
+    .herosection-heading{
+        padding-left: 7rem;
+        padding-right: 7rem;
+        font-size: 4rem;
+    }
+    .contact-accounts,.social-accounts{
+        font-size: 1.5rem;
+    }
+    .copyright-claim{
+        font-size: 1.25rem;
+    }
+}
+/* PC responsive */
+@media only screen and (min-width: 1536px){
+    .herosection-heading{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        font-size: 6rem;
+    }
+}

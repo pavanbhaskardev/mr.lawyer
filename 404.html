@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .page404 {
+            padding: 11rem 0;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+        }
+
+        .image404 {
+            height: 10rem;
+            width: 10rem;
+        }
+
+        .home-button {
+            line-height: 5;
+            text-decoration: none;
+            color: #ffff;
+            background-color: #3498DB;
+            border-style: none;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .home-button:hover {
+            padding: 0.75rem 1.25rem;
+            color: white;
+            background-color: #217bb8;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .image404 {
+                height: 20rem;
+                width: 20rem;
+            }
+
+            .page404 {
+                padding: 15rem 0;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            .image404 {
+                height: 25rem;
+                width: 25rem;
+            }
+
+            .home-button {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <figure class="page404">
+        <img src="images/404.svg" alt="page not found image" class="image404">
+        <figcaption>
+            <a href="index.html" class="home-button">Go to Home</a>
+        </figcaption>
+    </figure>
+</body>
+
+</html>

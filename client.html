@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Mr.Lawyer - Clients Page</title>
+  <!-- og tags -->
+  <meta property="og:title" content="Mr.Lawyer - lawyer page" data-react-helmet="true">
+  <meta property="og:description" content="Mr.Lawyer's offical clients page" data-react-helmet="true">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/favicon.ico">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <!-- AOS library linked -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- css linked -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="clientstyles.css">
+  <!-- google fonts linked -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <figure class="navbar-brand">
+          <a href="#">
+            <img src="images/lawyer.svg" class="logo" alt="Mr.lawyer Logo">
+          </a>
+        </figure>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="lawyer.html" id="lawyer-button">Lawyer</a></li>
+                <li><a class="dropdown-item" href="client.html">Clients</a></li>
+                <li><a class="dropdown-item" href="student.html">Law Student</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#1">Ask Query</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- hero section -->
+    <div class="herosection">
+      <div data-aos="zoom-in-up">
+        <h1 class="herosection-heading">True <span class="herotext-highlight">freedom</span> is nothing else but <span
+            class="herotext-highlight">justice</span>.</h1>
+      </div>
+      <a href="#1" class="hero-button">Ask Query <i class="fa-solid fa-circle-down"></i></a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#000" fill-opacity="1"
+        d="M0,96L48,106.7C96,117,192,139,288,138.7C384,139,480,117,576,133.3C672,149,768,203,864,213.3C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </main>
+  <!-- query section -->
+  <section class="quries" id="1">
+    <h2 class="quries-heading">We'll help you to find the solution💡 to all your legal queries</h2>
+    <div class="qurey-container">
+      <!-- linked form to formspree -->
+      <form action="https://formspree.io/f/mzbwebwe" method="POST" class="problem-form">
+        <div class="mb-3">
+          <label for="Name" class="form-label">Enter your name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" name="NAME" placeholder="somename">
+        </div>
+        <div class="mb-3">
+          <label for="gmail" class="form-label">Enter your gmail</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" name="GMAIL"
+            placeholder="someone@gmail.com">
+        </div>
+        <div class="mb-3">
+          <label for="place" class="form-label">Enter your city/town</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="CITY" placeholder="somewhere">
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Enter your phone number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" name="number"
+            placeholder="0000000000">
+        </div>
+        <div class="mb-3">
+          <label for="inputState" class="form-label">Criminal related cases</label>
+          <select class="form-select" id="autoSizingSelect" name="Criminal case">
+            <option selected>Select case</option>
+            <option value="Murder">Murder</option>
+            <option value="Hurt">Hurt</option>
+            <option value="Accident">Accident</option>
+            <option value="Cheating">Cheating</option>
+            <option value="Forgery">Forgery</option>
+            <option value="Rape">Rape</option>
+            <option value="Maintainance and domestic violence">Maintainance and domestic violence</option>
+            <option value="pocso">pocso</option>
+            <option value="Kidnapp">Kidnapp</option>
+            <option value="SC & ST case">SC & ST case</option>
+            <option value="Not related to me">Not related to me</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="inputState" class="form-label">Civil related cases</label>
+          <select class="form-select" id="autoSizingSelect" name="Civil Case">
+            <option selected>Select case</option>
+            <option value="Property cases">Property cases</option>
+            <option value="Money dispute">Money disputes</option>
+            <option value="Family law">Family law</option>
+            <option value="Arbitration case">Arbitration case</option>
+            <option value="Accident claims">Accident claims</option>
+            <option value="Election disputes">Election disputes</option>
+            <option value="Banking laws">Banking laws</option>
+            <option value="Succession cases">Succession cases</option>
+            <option value="Rent control">Rent control</option>
+            <option value="IP cases">IP cases</option>
+            <option value="Not related to me">Not related to me</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="inputState" class="form-label">Councilling related cases</label>
+          <select class="form-select" id="autoSizingSelect" name="Councilling Case">
+            <option selected>Select case</option>
+            <option value="councilling case">councilling case</option>
+            <option value="Not related to me">Not related to me</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="problem" class="form-label">Enter your problem</label>
+          <textarea class="form-control" name="PROBLEM" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Clearly mention your problem"></textarea>
+        </div>
+        <div class="query-button-align">
+          <button class="quries-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#AAB7B8" fill-opacity="1"
+      d="M0,192L48,170.7C96,149,192,107,288,117.3C384,128,480,192,576,192C672,192,768,128,864,117.3C960,107,1056,149,1152,149.3C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+  <!-- contact section -->
+  <footer class="contact" id="2">
+    <h3 class="contact-heading">Contact Us</h3>
+    <div class="contact-links">
+      <a href="mailto:mr.lawyerconsultancy@gmail.com" class="contact-accounts" target="_blank"
+        rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i> mr.lawyerconsultancy@gmail.com</a>
+      <a href="tel:+91-9347137827" class="contact-accounts"><i class="fa-solid fa-phone"></i> 9347137827</a>
+    </div>
+    <h5 class="contact-heading">Follow Us</h5>
+    <div class="follow-links">
+      <a href="https://www.instagram.com/mr.lawyerconsultancy/" class="social-accounts" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/mrlawye11528649" class="social-accounts" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100085604507140" class="social-accounts" target="_blank"><i
+          class="fa-brands fa-facebook"></i></a>
+    </div>
+    <p class="copyright-claim"><i class="fa-solid fa-copyright"></i> 2022 Mr.Lawyer | All Rights Reserved</p>
+  </footer>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome kit -->
+  <script src="https://kit.fontawesome.com/d33dc252e0.js" crossorigin="anonymous"></script>
+  <!-- AOS library js linked -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

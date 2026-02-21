@@ -35,7 +35,7 @@ body,
 .herosection {
   height: 70vh;
   width: auto;
-  background: linear-gradient(#ffffff00, black), url("images/justice.jpg");
+  background: linear-gradient(#ffffff00, black), url("images/justice.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -113,6 +113,11 @@ body,
 .message-pic1 {
   width: 10rem;
 }
+
+.carousel-container {
+  position: relative;
+}
+
 .carousel-fontchange,
 .carousel-message {
   font-family: "Noto Serif Display", serif;
